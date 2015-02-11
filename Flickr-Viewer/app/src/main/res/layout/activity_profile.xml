@@ -1,23 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#9C27B0"
+    android:background="#2196F3"
     >
 
+
+    <ImageView
+        android:id="@+id/imgbanner"
+        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:src="@drawable/banner"
+        android:layout_gravity="center"
+       android:scaleType="centerCrop"
+        />
     <TextView
         android:id="@+id/lblTitle"
         android:text="Raegan Hart"
         android:textSize="32sp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#FAFAFA"
+        android:textStyle="bold"
+        android:layout_below="@id/imgbanner"
+        android:layout_alignParentRight="true"
+        android:paddingRight="5dp"
+        android:padding="20dp"
+
+        />
     <ImageView
-        android:id="@+id/imgOne"
+        android:id="@+id/imgLogo"
+        android:layout_height="150dp"
+        android:layout_width="150dp"
+        android:src="@drawable/cat2"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="20dp"
+       android:layout_marginTop="90dp"
+
+      />
+
+    <ImageView
+        android:id="@+id/imgLocation"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:src="@drawable/image_one"
+        android:src="@drawable/draw2"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="40dp"
+        android:layout_below="@id/imgLogo"
+        />
+    <TextView
+        android:id="@+id/lblLocation"
+        android:text="Bath,UK"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="#263238"
+        android:layout_toRightOf="@id/imgLocation"
+        android:layout_alignTop="@id/imgLocation"
+        android:layout_alignBottom="@id/imgLocation"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="20dp"
+        />
+    <ImageView
+        android:id="@+id/imgName"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/draw3"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="40dp"
+        android:layout_below="@id/imgLocation"
+        />
+    <TextView
+        android:id="@+id/lblName"
+        android:text="Raeganhart89"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="#263238"
+        android:layout_toRightOf="@id/imgName"
+        android:layout_alignTop="@id/imgName"
+        android:layout_alignBottom="@id/imgName"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="20dp"
+        />
+    <ImageView
+        android:id="@+id/imgBirth"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/draw4"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="40dp"
+        android:layout_below="@id/imgName"
+        />
+    <TextView
+        android:id="@+id/lblBirth"
+        android:text="18th December"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="#263238"
+        android:layout_toRightOf="@id/imgBirth"
+        android:layout_alignTop="@id/imgBirth"
+        android:layout_alignBottom="@id/imgBirth"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="20dp"
         />
 
-</LinearLayout>
+    <ImageView
+        android:id="@+id/imgWebsite"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/draw1"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="40dp"
+        android:layout_below="@id/imgBirth"
+
+        />
+    <TextView
+        android:id="@+id/lblWebsite"
+        android:text="https://github.com/RaeganHart89"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="#263238"
+        android:layout_toRightOf="@id/imgWebsite"
+        android:layout_alignTop="@id/imgWebsite"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="20dp"
+        />
+
+</RelativeLayout>
